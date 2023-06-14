@@ -12,7 +12,7 @@ docker compose pull
 docker compose up -d
 
 ## 提示信息
-echo "服务启动成功，请访问 http://localhost:8100"
+echo "服务启动成功，请访问 http://localhost:8101"
 echo "管理员后台地址 http://localhost:8100/xyhelper"
 echo "管理员账号: admin"
 echo "管理员密码: 123456"
