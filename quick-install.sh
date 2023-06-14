@@ -6,7 +6,7 @@ echo "clone repository..."
 git clone --depth=1 https://github.com/xyhelper/chatgpt-api-server-deploy.git chatgpt-api
 
 ## 进入目录
-cd chatgpt-mirror
+cd chatgpt-api
 
 docker compose pull
 docker compose up -d
