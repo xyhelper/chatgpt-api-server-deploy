@@ -15,6 +15,9 @@ ChatGPT API Server 快速部署脚本库
 - 安装了 git
 - 有官网直登账号(不支持谷歌、微软、苹果等第三方登陆账号)
 
+## 安装视频教程
+[https://www.bilibili.com/video/BV1Mo4y177Lp](https://www.bilibili.com/video/BV1Mo4y177Lp)
+
 ## 自动部署
 
 在服务器上执行以下命令即可
@@ -43,3 +46,15 @@ cd chatgpt-api
 ```bash
 ./deploy.sh
 ```
+
+## 使用方法
+
+用户端访问地址为 http://服务器 ip:8101
+
+管理后台地址为 http://服务器 ip:8100/xyhelper/
+
+默认用户名密码为 admin/123456
+
+## 加入交流群
+
+![微信](./docs/xyhelper0622.png)
