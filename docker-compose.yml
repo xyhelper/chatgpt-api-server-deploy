@@ -13,14 +13,14 @@ services:
       MYSQL_DATABASE: "cool" # 业务库名
       MYSQL_USER: "cool" # 业务库用户名
       MYSQL_PASSWORD: "123123" # 业务库密码
-  redis:
-    image: redis
-    # command: --requirepass "12345678" # redis库密码,不需要密码注释本行
-    restart: always
-    environment:
-      TZ: Asia/Shanghai # 指定时区
-    volumes:
-      - ./data/redis/:/data/
+  # redis:
+  #   image: redis
+  #   # command: --requirepass "12345678" # redis库密码,不需要密码注释本行
+  #   restart: always
+  #   environment:
+  #     TZ: Asia/Shanghai # 指定时区
+  #   volumes:
+  #     - ./data/redis/:/data/
   chatgpt-api-server:
     image: xyhelper/chatgpt-api-server:latest
     container_name: chatgpt-api-server
