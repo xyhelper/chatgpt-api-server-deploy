@@ -59,4 +59,4 @@ cd chatgpt-api
 
 ## 加入交流群
 
-![微信](https://xyhelper.cn/xyhelperkf.png)
+![微信](https://xyhelper.github.io/xyhelperkf.png)
