@@ -57,6 +57,10 @@ cd chatgpt-api
 
 默认用户名密码为 admin/123456
 
+## 模拟API接口地址
+
+http://服务器IP:8102/v1/chat/completions
+
 ## 加入交流群
 
 ![微信](https://xyhelper.github.io/xyhelperkf.png)
