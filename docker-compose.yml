@@ -47,6 +47,15 @@ services:
       BASE_URI: "http://chatgpt-api-server:8001"
     labels:
       - "com.centurylinklabs.watchtower.scope=xyhelper-chatgpt-api-server"
+  chat2api:
+    image: xyhelper/chat2api
+    ports:
+      - "8102:8080"
+    restart: always
+    volumes:
+      - ./config/chat2api.yaml:/app/config/config.yaml
+    labels:
+      - "com.centurylinklabs.watchtower.scope=xyhelper-chatgpt-api-server"
   watchtower:
     image: containrrr/watchtower
     volumes:

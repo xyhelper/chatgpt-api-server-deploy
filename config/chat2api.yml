@@ -1,0 +1,2 @@
+APISERVER: http://chatgpt-api-server:8001/backend-api/conversation
+PASSMODE: true
