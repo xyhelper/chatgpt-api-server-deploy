@@ -9,6 +9,21 @@ ChatGPT API Server 快速部署脚本库
 - 我想做商业用途,我想自己运营->老板里面请 [https://www.xyhelper.com.cn/access](https://www.xyhelper.com.cn/access)
 - 我有服务器,我想自己部署->请继续阅读本文档(有条件的话给个star吧)
 
+## 重要提示 20231224 更新
+
+* 本次更新启用了redis缓存, 历史安装的用户可能REDIS配置是注释状态,请自行修改取消注释,具体请对照当前库中的`docker-compose.yml`文件
+* 因api-server主程序已集成chat2api接口，原有chat2api可删除，但是需要修改`docker-compose.yml`文件中的`command`参数，具体请对照当前库中的`docker-compose.yml`文件
+
+修改完毕后依次执行以下命令完成更新
+
+```bash
+docker-compose down
+
+./deploy.sh
+```
+
+
+
 ## 前置条件
 
 - 一台至少 2 核 2G 内存的服务器,推荐使用香港、新加坡、日本地区的服务器,可以兼顾国内访问。
@@ -58,7 +73,7 @@ cd chatgpt-api
 
 ## 模拟API接口地址
 
-http://服务器IP:8102/v1/chat/completions
+http://服务器IP:8100/v1/chat/completions
 
 ## 加入交流群
 
